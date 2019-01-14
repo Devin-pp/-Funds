@@ -1,0 +1,29 @@
+{
+  "name": "vue-funds",
+  "version": "1.0.0",
+  "description": "restful.api",
+  "main": "server.js",
+  "scripts": {
+    "funds-install": "npm install --prefix funds",
+    "funds": "npm start --prefix funds",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run funds\""
+  },
+  "author": "Devin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.13",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "silly-datetime": "^0.1.2",
+    "vue": "^2.5.21"
+  }
+}
